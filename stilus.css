@@ -1,0 +1,8 @@
+main, header,nav, article footer{
+    border:1px solid  gray;
+    padding: 0px;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+}
