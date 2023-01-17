@@ -10,12 +10,11 @@ main, header, footer{
     padding: 0px;
 }
 main{
-    max-width: 900px;
+    max-width: 1400px;
     background-color: black;
     color: white;
     margin: auto;
     display: grid;
-    grid-template-columns:  auto auto auto;
     grid-template-areas:    "h h h"
                             "n a as"
                             "f f f";
@@ -30,13 +29,16 @@ header{
 nav{
     display: grid;
     grid-area: n;
-    height: 150px;
+    height: 250px;
     margin: 10px;
 }
 nav ul{
     list-style-type: none;
-    padding: 2px;
+    padding: 2px; 
 
+}
+nav ul li{
+    padding: 5px;
 }
  nav li a{
     font-size: 30px;
@@ -45,6 +47,7 @@ nav ul{
     color: red;
     background-color: rgb(3, 141, 253);
     border-radius: 35px;
+    padding: 4px;
 }
 nav li a:hover{
     color: white;
@@ -76,9 +79,15 @@ img{
     float: left;
     border: 1px solid black;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     main{
-        grid-template-columns: auto auto auto;
+        grid-template-areas:    "h h h"
+                                "a as n"
+                                "f f f";
+    }
+  }
+@media screen and (max-width: 700px) {
+    main{
         grid-template-areas:    "h"
                                 "n"
                                 "a"
